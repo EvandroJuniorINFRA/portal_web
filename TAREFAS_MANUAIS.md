@@ -1,11 +1,14 @@
 # Tarefas manuais (atualizado)
 
-## Decisao de arquitetura
+## Decisao de arquitetura (atual)
 
-**Vercel + Railway nao servem** para Oracle com IP fixo.  
-Use **VPS** ou **servidor Windows na empresa**.
+- Dados dos titulos: **somente Oracle** (sem API TOTVS).
+- **VPS com IP fixo** roda portal + API e consulta o Oracle remoto.
+- **Dominio** aponta para a VPS (HTTPS com Nginx).
+- **Nao instale Oracle Database na VPS** — use o Oracle que o Winthor ja utiliza; libere o **IP da VPS** no ACL.
 
-Guia completo: **[DEPLOY_VPS.md](./DEPLOY_VPS.md)**
+Guia principal: **[INSTALACAO_VPS_DOMINIO.md](./INSTALACAO_VPS_DOMINIO.md)**  
+Alternativa rede interna: **[INSTALACAO_SERVIDOR_192.168.1.210.md](./INSTALACAO_SERVIDOR_192.168.1.210.md)**
 
 ---
 
